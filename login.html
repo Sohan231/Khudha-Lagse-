@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Khudha Lagse?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span>🍴</span> Khudha Lagse<span class="logo-q">?</span></a>
+      <a class="back-home" href="index.html">← Back to home</a>
+    </div>
+  </header>
+  <main class="auth-main">
+    <div class="auth-card">
+      <div class="auth-icon">👋</div>
+      <span class="section-kicker">Welcome back</span>
+      <h1>Login to your account</h1>
+      <p class="auth-subtitle">Order your favorite food in just a few clicks.</p>
+      <form id="loginForm" class="auth-form">
+        <label>Email or phone<input id="loginEmail" type="text" placeholder="you@example.com" required></label>
+        <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="Enter your password" minlength="6" required><button type="button" class="password-toggle" data-target="loginPassword">👁</button></div></label>
+        <div class="form-row"><label class="checkbox"><input type="checkbox"> <span>Remember me</span></label><a href="#">Forgot password?</a></div>
+        <button class="primary-btn" type="submit">Login</button>
+      </form>
+      <div class="divider"><span>OR</span></div>
+      <button class="google-btn" type="button">G <span>Continue with Google</span></button>
+      <p class="auth-footer">Don't have an account? <a href="signup.html">Sign up</a></p>
+      <p class="form-message" id="loginMessage" role="status"></p>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

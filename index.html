@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khudha Lagse? - Food delivery made simple.">
+  <title>Khudha Lagse? | Food Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span>🍴</span> Khudha Lagse<span class="logo-q">?</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#offers">Offers</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="login-link" href="login.html">Login</a>
+        <a class="signup-btn" href="signup.html">Sign Up</a>
+        <button class="cart-btn" type="button" aria-label="Cart">🛒 <span class="cart-count">0</span></button>
+        <button class="menu-btn" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="#restaurants">Restaurants</a>
+      <a href="#offers">Offers</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">🍽️ Hungry? We've got you.</span>
+          <h1>Khudha Lagse?<br><span>Food is on the way.</span></h1>
+          <p>Discover your favorite food, order in a few clicks, and enjoy delicious meals delivered right to your door.</p>
+
+          <form class="search-box" id="searchForm">
+            <span class="location-icon">📍</span>
+            <input id="searchInput" type="search" placeholder="Search restaurant or food..." aria-label="Search restaurant or food">
+            <button type="submit">Search</button>
+          </form>
+
+          <div class="hero-stats">
+            <div><strong>500+</strong><span>Restaurants</span></div>
+            <div><strong>10k+</strong><span>Happy Users</span></div>
+            <div><strong>30 min</strong><span>Avg. Delivery</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Food delivery illustration">
+          <div class="hero-circle"></div>
+          <div class="floating-card card-top">🔥 <span>20% OFF</span></div>
+          <div class="food-plate">🍔</div>
+          <div class="floating-card card-bottom">⭐ <span>4.9 Rated</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Explore</span>
+            <h2>What are you craving?</h2>
+          </div>
+          <a href="#restaurants">See all →</a>
+        </div>
+        <div class="category-row">
+          <button class="category-card" data-category="Burger"><span>🍔</span><b>Burger</b></button>
+          <button class="category-card" data-category="Pizza"><span>🍕</span><b>Pizza</b></button>
+          <button class="category-card" data-category="Biryani"><span>🍚</span><b>Biryani</b></button>
+          <button class="category-card" data-category="Chicken"><span>🍗</span><b>Chicken</b></button>
+          <button class="category-card" data-category="Chinese"><span>🍜</span><b>Chinese</b></button>
+          <button class="category-card" data-category="Dessert"><span>🍰</span><b>Dessert</b></button>
+          <button class="category-card" data-category="Drinks"><span>🥤</span><b>Drinks</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section restaurants" id="restaurants">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">Near you</span>
+            <h2>Popular restaurants</h2>
+          </div>
+          <a href="#restaurants">View all →</a>
+        </div>
+
+        <div class="restaurant-grid" id="restaurantGrid">
+          <article class="restaurant-card" data-name="Burger House" data-category="Burger">
+            <div class="restaurant-image image-burger"><span class="offer-badge">20% OFF</span><button class="heart-btn" type="button">♡</button><span class="food-emoji">🍔</span></div>
+            <div class="restaurant-info">
+              <div class="card-title-row"><h3>Burger House</h3><span class="rating">★ 4.8</span></div>
+              <p>🍔 Burgers • Fast Food</p>
+              <div class="delivery-meta"><span>৳৳</span><span>•</span><span>25–35 min</span><span>•</span><span>৳30 delivery</span></div>
+            </div>
+          </article>
+
+          <article class="restaurant-card" data-name="Biryani Express" data-category="Biryani">
+            <div class="restaurant-image image-biryani"><span class="offer-badge">FREE DELIVERY</span><button class="heart-btn" type="button">♡</button><span class="food-emoji">🍚</span></div>
+            <div class="restaurant-info">
+              <div class="card-title-row"><h3>Biryani Express</h3><span class="rating">★ 4.7</span></div>
+              <p>🍚 Biryani • Bangladeshi</p>
+              <div class="delivery-meta"><span>৳৳</span><span>•</span><span>30–40 min</span><span>•</span><span>৳20 delivery</span></div>
+            </div>
+          </article>
+
+          <article class="restaurant-card" data-name="Pizza Point" data-category="Pizza">
+            <div class="restaurant-image image-pizza"><span class="offer-badge">15% OFF</span><button class="heart-btn" type="button">♡</button><span class="food-emoji">🍕</span></div>
+            <div class="restaurant-info">
+              <div class="card-title-row"><h3>Pizza Point</h3><span class="rating">★ 4.6</span></div>
+              <p>🍕 Pizza • Italian</p>
+              <div class="delivery-meta"><span>৳৳৳</span><span>•</span><span>20–30 min</span><span>•</span><span>৳40 delivery</span></div>
+            </div>
+          </article>
+
+          <article class="restaurant-card" data-name="Chicken Republic" data-category="Chicken">
+            <div class="restaurant-image image-chicken"><span class="offer-badge">10% OFF</span><button class="heart-btn" type="button">♡</button><span class="food-emoji">🍗</span></div>
+            <div class="restaurant-info">
+              <div class="card-title-row"><h3>Chicken Republic</h3><span class="rating">★ 4.9</span></div>
+              <p>🍗 Chicken • Fast Food</p>
+              <div class="delivery-meta"><span>৳৳</span><span>•</span><span>25–30 min</span><span>•</span><span>৳25 delivery</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>No restaurants found. Try another search.</p>
+      </div>
+    </section>
+
+    <section class="offer-banner" id="offers">
+      <div class="container offer-inner">
+        <div>
+          <span class="section-kicker light">Limited time</span>
+          <h2>Hungry? Get 50% OFF your first order!</h2>
+          <p>Use code <strong>KHULTA50</strong> at checkout.</p>
+          <a class="light-btn" href="signup.html">Order now →</a>
+        </div>
+        <div class="offer-art">🍕</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo footer-logo" href="index.html"><span>🍴</span> Khudha Lagse<span class="logo-q">?</span></a><p>Good food. Good mood. Delivered.</p></div>
+      <div><h4>Company</h4><a href="#">About us</a><a href="#">Careers</a><a href="#">Contact</a></div>
+      <div><h4>Support</h4><a href="#">Help Center</a><a href="#">Terms</a><a href="#">Privacy</a></div>
+      <div><h4>Follow us</h4><div class="socials"><a href="#">f</a><a href="#">𝕏</a><a href="#">◎</a></div></div>
+    </div>
+    <div class="container copyright">© 2026 Khudha Lagse? — All rights reserved.</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
